@@ -699,7 +699,7 @@ function renderDirections(path) {
   document.getElementById('time').textContent = Math.round(totalDistance * 12);
 }
 
-fetch('map.geojson')
+fetch('CQ_CEM.geojson')
   .then(res => res.json())
   .then(data => {
     originalTrailData = data;
